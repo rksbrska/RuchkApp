@@ -1,0 +1,82 @@
+﻿<Window x:Class="RuchkApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RuchkApp"
+        mc:Ignorable="d"
+        Title="RuchkApp" Height="530" Width="700" MinWidth="700" MinHeight="530" Icon="Resources/ruchkapp.ico">
+    <Grid Background="#1cb28a">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="76"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Image HorizontalAlignment="Left" Height="40" Margin="10,15,0,15" VerticalAlignment="Center" Width="40" Source="Resources/logo.png"/>
+        <Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" Source="Resources/tetrad.png" Stretch="Fill" Margin="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Row="2" Text="2023 Цой А.С. broshourka@gmail.com" Style="{StaticResource RuchkAppTextStyle}" FontSize="16" Height="22" Width="286" HorizontalAlignment="Left" Margin="10
+                   " Grid.ColumnSpan="2"/>
+        <TextBlock TextWrapping="Wrap" Text="РучкАпп" Style="{StaticResource RuchkAppTextStyle}" Margin="60,18,0,18" FontFamily="Comic Sans MS" Height="34" HorizontalAlignment="Left"/>
+        <Button Content="Выход" Click="ButtonStop_Click" RenderTransformOrigin="0.505,0.489" Style="{StaticResource RuchkAppButtonTextStyle}" Margin="0,10,10,10" HorizontalAlignment="Right" Grid.Column="1">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <LinearGradientBrush StartPoint="0.3,0" EndPoint="0.5,1">
+                    <GradientStop Color="Gray" Offset="0.0" />
+                    <GradientStop Color="DarkGray" Offset="0.25" />
+                    <GradientStop Color="Gray" Offset="0.75" />
+                    <GradientStop Color="DarkGray" Offset="1.0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="2.*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox Grid.Row="1" Grid.Column="2" Style="{StaticResource RuchkAppTextBoxMargin}" Margin="10"/>
+            <TextBox Grid.Row="2" Grid.Column="2" Style="{StaticResource RuchkAppTextBoxMargin}" Margin="10"/>
+
+            <Button Content="Вход"   RenderTransformOrigin="0.505,0.489" Grid.Row="3" Grid.Column="2" Style="{StaticResource RuchkAppButtonTextStyle}" Margin="144,12,142,12">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0.3,0" EndPoint="0.5,1">
+                        <GradientStop Color="Gray" Offset="0.0" />
+                        <GradientStop Color="DarkGray" Offset="0.25" />
+                        <GradientStop Color="Gray" Offset="0.75" />
+                        <GradientStop Color="DarkGray" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="Гость"  RenderTransformOrigin="0.505,0.489"  Grid.Row="3" Grid.Column="1" Style="{StaticResource RuchkAppButtonTextStyle}" Margin="28,12,26,12">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0.3,0" EndPoint="0.5,1">
+                        <GradientStop Color="Gray" Offset="0.0" />
+                        <GradientStop Color="DarkGray" Offset="0.25" />
+                        <GradientStop Color="Gray" Offset="0.75" />
+                        <GradientStop Color="DarkGray" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <TextBlock Grid.Column="1" Text="Авторизация" Style="{StaticResource RuchkAppTextStyle}" Grid.Row="0" Height="34" Margin="28,18" Width="148"/>
+            <TextBlock Grid.Column="1" Text="Логин" Style="{StaticResource ResourceKey=RuchkAppTextStyle}" Grid.Row="1" Height="32" Margin="66,24" Width="72" />
+            <TextBlock Grid.Column="1" Text="Пароль" Style="{StaticResource ResourceKey=RuchkAppTextStyle}" Grid.Row="2" Height="32" Margin="58,24" Width="88" />
+        </Grid>
+    </Grid>
+</Window>
