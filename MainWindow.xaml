@@ -19,7 +19,7 @@
         <TextBlock Grid.Row="2" Text="2023 Цой А.С. broshourka@gmail.com" Style="{StaticResource RuchkAppTextStyle}" FontSize="16" Height="22" Width="286" HorizontalAlignment="Left" Margin="10
                    " Grid.ColumnSpan="2"/>
         <TextBlock TextWrapping="Wrap" Text="РучкАпп" Style="{StaticResource RuchkAppTextStyle}" Margin="60,18,0,18" FontFamily="Comic Sans MS" Height="34" HorizontalAlignment="Left"/>
-        <Button Content="Выход" Click="ButtonStop_Click" RenderTransformOrigin="0.505,0.489" Style="{StaticResource RuchkAppButtonTextStyle}" Margin="0,10,10,10" HorizontalAlignment="Right" Grid.Column="1">
+        <Button Content="Выход" Click="ButtonStop_Click" RenderTransformOrigin="0.505,0.489" Style="{StaticResource RuchkAppButtonTextStyle}" Margin="10" HorizontalAlignment="Right" Grid.Column="1">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -48,7 +48,7 @@
             <TextBox Grid.Row="1" Grid.Column="2" Style="{StaticResource RuchkAppTextBoxMargin}" Margin="10"/>
             <TextBox Grid.Row="2" Grid.Column="2" Style="{StaticResource RuchkAppTextBoxMargin}" Margin="10"/>
 
-            <Button Content="Вход"   RenderTransformOrigin="0.505,0.489" Grid.Row="3" Grid.Column="2" Style="{StaticResource RuchkAppButtonTextStyle}" Margin="144,12,142,12">
+            <Button Content="Вход"   RenderTransformOrigin="0.505,0.489" Grid.Row="3" Grid.Column="2" Style="{StaticResource RuchkAppButtonTextStyle}" Margin="10">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>
@@ -61,7 +61,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button Content="Гость"  RenderTransformOrigin="0.505,0.489"  Grid.Row="3" Grid.Column="1" Style="{StaticResource RuchkAppButtonTextStyle}" Margin="28,12,26,12">
+            <Button Content="Гость"  RenderTransformOrigin="0.505,0.489"  Grid.Row="3" Grid.Column="1" Style="{StaticResource RuchkAppButtonTextStyle}" Margin="10">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>
